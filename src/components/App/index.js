@@ -1,26 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from '../static/Footer';
 import Header from '../static/Header';
 import Home from '../pages/Home';
+import './style.scss';
 
 function App() {
-
-  const [value, setValue] = useState('');
-
-  const changeInput = (event) => {
-    setValue(event.target.value);
-  }
-
+  console.log('RENDER APP');
   return (
-    <div id="app">
+    <div className="app">
       <Header />
-      <main>
-        <input onChange={changeInput} />
-        <Home
-          title={value}
-          numberPage="5"
-        />
-        <p>{value}</p>
+      <main className="page">
+        <Home />
       </main>
       <Footer />
     </div>

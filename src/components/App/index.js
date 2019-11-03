@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../static/Footer';
 import Header from '../static/Header';
-import Home from '../pages/Home';
+import Router from '../Router';
 import './style.scss';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="app">
       <Header />
       <main className="page">
-        <Home />
+        <Router />
       </main>
       <Footer />
     </div>

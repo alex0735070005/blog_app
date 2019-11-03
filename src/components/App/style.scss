@@ -21,9 +21,20 @@ a {
     margin: auto;
 }
 
-.page {
+@keyframes ShowPage {
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.page > div {
     min-height: 600px;
     box-shadow: 0 0 3px 2px #00000069;
     padding: 15px;
+    animation: ShowPage 2s;
 }
 

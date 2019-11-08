@@ -1,0 +1,21 @@
+.post {
+  box-shadow: 0 0px 3px 2px #0000008a;
+  width: 23%;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  min-height: 200px;
+  position: relative;
+
+  span {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+
+  i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}

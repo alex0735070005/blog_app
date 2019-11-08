@@ -5,8 +5,5 @@ export function getPosts() {
     return fetch(`${BASE_URL}/posts`)
         .then(response => {
             return response.json();
-        })
-        .then(posts=>{
-            console.log(posts);
-        })
+        });      
 }

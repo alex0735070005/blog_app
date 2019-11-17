@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Post from '../../shared/Post';
 
-import { getPosts } from './service';
+import { getPosts } from '../../shared/handlers/postApiService';
 import './styles.scss';
 
 const Posts = (props) => {

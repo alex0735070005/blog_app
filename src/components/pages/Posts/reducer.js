@@ -4,6 +4,9 @@ const initialState = {
 
 
 export default (state = initialState, action) => {
+    
+    console.log('RUN POSTS REDUCER', action)
+
     switch (action.type) {
         case 'SET_POSTS':
             return {
